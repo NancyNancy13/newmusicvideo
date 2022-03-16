@@ -24,11 +24,34 @@
         <input type="text" placeholder="Search..." />
       </div>
     </header>
+    <h1>ALL MUSIC</h1>
     <main>
-      <article>
-        <a href="product.html"> <img class="musicphoto" src="" </a>
-      </article>
+      <template id="myTemplate">
+        <article>
+          <a href="product.html">
+            <img
+              class="musicphoto"
+              src="https://technancy.dk/image1.jpg"
+              alt="image1"
+            />
+          </a>
+          <div class="songinformation">
+            <p class="song">Song: <span>Aaye Ho Meri Zindagi Mein</span></p>
+            <p class="singer">Singer: <span>Udit Narayan</span></p>
+            <div class="views">
+              <h4>38M</h4>
+              <p>(views)</p>
+            </div>
+          </div>
+        </article>
+      </template>
     </main>
+    <footer>
+      <div class="footer">
+        <h4>This is a student project.</h4>
+        <p>Nancy(MMD Student)</p>
+      </div>
+    </footer>
     <script src="main.js"></script>
   </body>
 </html>
