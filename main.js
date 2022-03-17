@@ -23,7 +23,7 @@ function showMusic(music) {
   const template = document.querySelector("#myTemplate").content;
   // copying the template
   const copy = template.cloneNode(true);
-
+  // copy the data
   copy.querySelector("img").src = `${music.images}`;
   copy.querySelector(".song").textContent = `${music.songname}`;
   copy.querySelector(".singer").textContent = `${music.singer}`;
