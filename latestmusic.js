@@ -1,7 +1,8 @@
 // the endpoints: https://musicvideo-418b.restdb.io/rest/musicvideo
 // the API key: 6231a362dced170e8c83a2d2
 
-const url = "https://musicvideo-418b.restdb.io/rest/musicvideo";
+const url =
+  "https://musicvideo-418b.restdb.io/rest/musicvideo?q=&max=10&sort=releasingdate&dir=-1";
 const options = {
   headers: {
     "x-apikey": "6231a362dced170e8c83a2d2",

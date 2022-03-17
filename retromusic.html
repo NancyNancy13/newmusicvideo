@@ -1,6 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
+<head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -26,10 +24,11 @@
           <input type="text" placeholder="Search..." />
         </div>
       </div>
-      <div class="dropdown">
-        <h1>ALL MUSIC</h1>
-        <button onclick="myFunction()" class="drop">Choose Category</button>
-        <div id="myDropdown" class="dropdown-content">
+      
+        <div class="dropdown">
+            <h1>Evergreen Songs</h1>
+            <button onclick="myFunction()" class="drop">Choose Category</button>
+         <div id="myDropdown" class="dropdown-content">
           <input
             type="text"
             placeholder="Search..."
@@ -39,37 +38,37 @@
           <a href="index.html">All Songs</a>
           <a href="latestmusic.html">Trending Songs</a>
           <a href="retromusic.html">Retro Evergreen</a>
+         </div>
         </div>
-      </div>
+        
     </header>
-
     <main>
-      <template id="myTemplate">
-        <article>
-          <a href="song.html">
-            <img
-              class="musicphoto"
-              src="https://technancy.dk/image1.jpg"
-              alt="image1"
-            />
-          </a>
-          <div class="songinformation">
-            <p class="song">Song: <span>Aaye Ho Meri Zindagi Mein</span></p>
-            <p class="singer">Singer: <span>Udit Narayan</span></p>
-            <div class="views">
-              <h4>38M</h4>
-              <p>(views)</p>
+        <template id="myTemplate">
+          <article>
+            <a href="product.html">
+              <img
+                class="musicphoto"
+                src="https://technancy.dk/image1.jpg"
+                alt="image1"
+              />
+            </a>
+            <div class="songinformation">
+              <p class="song">Song: <span>Aaye Ho Meri Zindagi Mein</span></p>
+              <p class="singer">Singer: <span>Udit Narayan</span></p>
+              <div class="views">
+                <h4>38M</h4>
+                <p>(views)</p>
+              </div>
             </div>
-          </div>
-        </article>
-      </template>
-    </main>
-    <footer>
-      <div class="footer">
-        <h4>This is a student project.</h4>
-        <p>Nancy(MMD Student)</p>
-      </div>
-    </footer>
-    <script src="main.js"></script>
+          </article>
+        </template>
+      </main>
+      <footer>
+        <div class="footer">
+          <h4>This is a student project.</h4>
+          <p>Nancy(MMD Student)</p>
+        </div>
+      </footer>
+    <script src="retromusic.js"></script>
   </body>
 </html>

@@ -5,8 +5,8 @@
   --primary-font: "Bebas Neue", sans-serif;
   --secondary-font: "Roboto", sans-serif;
   /* colors */
-  --background-color: rgb(247, 202, 144);
-  --nav-bg-colr: #f8882d;
+  --background-color: rgb(248, 210, 220);
+  --nav-bg-colr: #f77baf;
 }
 
 * {
@@ -18,6 +18,11 @@
 p {
   font-family: var(--secondary-font);
   font-size: smaller;
+  font-weight: normal;
+}
+h1 {
+  font-family: var(--secondary-font);
+  font-size: large;
   font-weight: normal;
 }
 
@@ -33,7 +38,7 @@ body {
 .topnav {
   overflow: hidden;
 }
-header {
+.header {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   background-color: var(--nav-bg-colr);
@@ -51,8 +56,9 @@ header {
 
 /* Change the color of links on hover */
 .topnav a:hover {
-  background-color: #f06e18;
+  background-color: #f01884;
   color: white;
+  font-size: x-large;
 }
 /* Style the search box inside the navigation bar */
 .topnav input[type="text"] {
@@ -79,6 +85,59 @@ header {
     border: 1px solid #ccc;
   }
 }
+/* dropdown button */
+.drop {
+  background-color: #04aa6d;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+.drop:hover {
+  background-color: #3e8e41;
+}
+/* The search field */
+#myInput {
+  box-sizing: border-box;
+
+  font-size: 16px;
+  padding: 14px;
+  border: none;
+}
+#myInput:focus {
+  outline: 3px solid #ddd;
+}
+.dropdown {
+  display: grid;
+  grid-template-columns: 2fr auto;
+  position: relative;
+  padding-right: 3rem;
+  padding-top: 1rem;
+  /* display: inline-block; */
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  right: 1rem;
+  top: 5rem;
+  background-color: #f6f6f6;
+  min-width: 230px;
+  border: 1px solid #ddd;
+  z-index: 1;
+}
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+.dropdown-content a:hover {
+  background-color: #d1d0d0;
+}
+.show {
+  display: block;
+}
 .image {
   padding: 0%;
   display: block;
@@ -97,6 +156,7 @@ main {
   justify-content: end;
 }
 .songinformation {
+  display: block;
   background-color: white;
   padding: 0.5rem;
 }
