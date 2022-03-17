@@ -39,19 +39,3 @@ function showMusic(music) {
 function myFunction() {
   document.querySelector("#myDropdown").classList.toggle("show");
 }
-
-function filterFunction() {
-  var input, filter, a, i;
-  input = document.querySelector("#myInput");
-  filter = input.value.toUpperCase();
-  div = document.querySelector("#myDropdown");
-  a = div.href("a");
-  for (i = 0; i < a.length; i++) {
-    txtValue = a[i].textContent || a[i].innerText;
-    if (txtValue.toUpperCase().indexOf(filter) > -1) {
-      a[i].style.display = "";
-    } else {
-      a[i].style.display = "none";
-    }
-  }
-}
